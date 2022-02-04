@@ -10,18 +10,18 @@ public class Main {
 
     public static void main(String[] args) {
 
+      // Adding numbers to the arraylist
+      numbers.add("9085153123");
+      numbers.add("7132312931");
+      numbers.add("1234567890");
+      numbers.add("8109874101");
 
-        // Adding new ShoppingItems to the list
-        numbers.add("9085153123");
-        numbers.add("7132312931");
-        numbers.add("1234567890");
-        numbers.add("8109874101");
+      meal = "Dinner";
+      
+      
+      Javalin app = Javalin.create().start(4100);
 
-        meal = "Dinner";
-        
-        Javalin app = Javalin.create().start(4100);
-
-        app.get("/", ctx -> ctx.render("index.jte"));
+      app.get("/", ctx -> ctx.render("index.jte"));
 
     }
 
