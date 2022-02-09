@@ -1,3 +1,6 @@
+@import java.util.*
+@param ArrayList<String> phoneNumbers
+
 <html lang="en">
 
 <head>
@@ -5,6 +8,9 @@
 </head>
 <body>
 
+  @for(String n : phoneNumbers)
+    <li>${n}</li>
+    @endfor
 
 </body>
 </html>

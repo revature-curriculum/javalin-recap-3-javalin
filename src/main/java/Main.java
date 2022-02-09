@@ -23,7 +23,19 @@ public class Main {
 
       app.get("/", ctx -> ctx.render("index.jte"));
 
+      app.get("/meal", mealHandler);
+
+      app.get("/phoneNumbers", pnHandler);
+
     }
+
+    public static Handler mealHandler= ctx -> {
+      ctx.render("meal.jte", Collections.singletonMap("meal", meal));
+    };
+
+    public static Handler pnHandler= ctx -> {
+      ctx.render("phoneNumbers.jte", Collections.singletonMap("phoneNumbers", numbers));
+    };
 
 
 }

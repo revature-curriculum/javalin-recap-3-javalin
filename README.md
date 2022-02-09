@@ -1,4 +1,4 @@
-## Javalin JTE with Java Class
+## Javalin Recap 3 Answer
 ---
 ### Description
 In this exercise, you will create 3 jte files. The first file should have links to the other 2 jte files. The first link should lead to a page with a list of numbers. The second link should lead to a page with a quote about the meal of the day.
