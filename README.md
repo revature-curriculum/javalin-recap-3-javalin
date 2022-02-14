@@ -6,10 +6,20 @@ In this exercise, you will create 3 jte files. The first file should have links 
 ---
 ### Steps
 
-1. In src -> main -> java -> Main.java, create 2 routes leading to your meal.jte file and phoneNumbers.jte.
-2. In the Main.java create handlers for both routes sending the necessary information to the jte pages.
-3. In src -> main -> jte -> meal.jte, create an if statement checking if the meal is breakfast, lunch or dinner. For each condition, have it print out something relating to that meal. Remember to write the code to receive the parameter.
-4. In src -> main -> jte -> phoneNumebers.jte using a for loop, iterate through the elements in the numbers array and print each number out. Remember to write the code to receive the parameter.
+1. In Main.java create handlers for both routes sending the necessary information to the jte pages.
+   1. One handler that renders meal.jte and sends the meal string to the file.
+   2. The other handler should render phoneNumbers.jte and send the arraylist to it.
+2. In src -> main -> java -> Main.java, create 2 routes:
+   1. One associated with the handler that points to meal.jte.
+   2. The other associated with the handler that points to phoneNumbers.jte
+3. In src -> main -> jte -> meal.jte
+   1. Create an if statement checking if the meal is breakfast, lunch or dinner. 
+   2. For each condition, have it print out something relating to that meal. 
+   3. Remember to write the code to receive the parameter.
+4. In src -> main -> jte -> phoneNumebers.jte
+   1. Using a for loop, iterate through the elements in the numbers array and print each number out. 
+   2. Remember to write the code to receive the parameter.
+   
 ---
 ### Sample Output
 Meal:
